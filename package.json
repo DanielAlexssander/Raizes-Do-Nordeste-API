@@ -1,0 +1,31 @@
+{
+  "name": "raizes-do-nordeste-api",
+  "version": "1.0.0",
+  "description": "API REST para a rede de lanchonetes Raízes do Nordeste",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "prisma:migrate": "npx prisma migrate dev",
+    "prisma:seed": "npx prisma db seed",
+    "prisma:generate": "npx prisma generate"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "5.22.0",
+    "bcrypt": "5.1.1",
+    "cors": "2.8.5",
+    "dotenv": "16.4.5",
+    "express": "4.21.1",
+    "jsonwebtoken": "9.0.2",
+    "swagger-jsdoc": "6.2.8",
+    "swagger-ui-express": "5.0.1",
+    "uuid": "10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.7",
+    "prisma": "5.22.0"
+  }
+}
