@@ -1,3 +1,19 @@
+# Dependencies
 node_modules/
+
+# Environment
 .env
+
+# Prisma
+prisma/migrations/
+
+# Logs
+*.log
+logs/
+
+# Build
 dist/
+
+# OS
+.DS_Store
+Thumbs.db
